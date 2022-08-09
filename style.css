@@ -739,6 +739,8 @@ p {
     margin: auto;
     display: flex;
     flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -899,6 +901,17 @@ h4 {
     background-image: url("img/image-de-presentation.jpg");
 }
 
+
+@media (max-width:768px) {
+    .bg-banniere {
+        background-image: url("img/agence-la-panthere-mobile.jpg");
+    }
+    
+    .bg-presentation {
+        background-image: url("img/image-de-presentation-mobile.jpg");
+    }
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -1015,7 +1028,7 @@ h4 {
         right: -1px;
     }
     .navbar-collapse {
-        padding: 0;
+        padding: 0 0 8px 0;
         overflow-x: hidden;
         -webkit-box-shadow: none;
         box-shadow: none;
@@ -1197,8 +1210,15 @@ figcaption em {
         padding-left: 0;
     }
 
-    .bloc-footer {
-       min-width: 33%;
+    .partners {
+        width: 100%;
     }
+
+    .bloc-footer {
+        width: 150px;
+        margin-right: 15px;
+       
+    }
+
 }
 
