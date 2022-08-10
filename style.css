@@ -295,13 +295,17 @@ a:hover {
 }
 
 .navbar-container {
-    padding: 0;
+    padding: 20px 50px;
 }
 .navbar {
     margin-bottom: 0;
     z-index: 1;
 }
-
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 5px 0px;
+    }
+}
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
@@ -314,7 +318,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .navbar-brand {
-        padding: 30px 10px 15px;
+        padding: 30px 0 15px 20px;
     }
 }
 
@@ -355,13 +359,14 @@ a:hover {
 }
 
 .navbar-toggle {
-    margin: 10px 10px 0 0;
     border: 0px;
     padding: 30px;
 }
 @media (max-width:768px) {
     .navbar-toggle {
-        padding: 30px 10px 15px;
+        margin-top: 10px;
+        margin-right: 0;
+        padding: 30px 20px 15px 0;
     }
 }
 
@@ -1115,11 +1120,9 @@ h4 {
 }
 
 /* Bloc Citation */
-
 .quote-fig {
     margin: 60px 0;
 }
-
 blockquote {
     border-left: 0;
     margin-bottom: 0;
@@ -1134,7 +1137,6 @@ blockquote {
     width: 84%;
     margin: auto;
 }
-
 figcaption {
     font-size: 20px;
     margin-bottom: 50px;
@@ -1143,13 +1145,14 @@ figcaption {
 figcaption em {
     font-style: normal;
 }
-
+/* Titre du bloc de la partie porfolio */
 .portfolio-title {
     width: 80%;
     margin: auto;
     padding: 35px;
 }
 
+/* AJout du code pour adapter la page d'accueil au format responsive. */
 @media (max-width: 768px) {
     .presentation-container {
         padding-left: 0;
