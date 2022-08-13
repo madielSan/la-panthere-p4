@@ -352,7 +352,6 @@ a:hover {
     padding: 0 25px;
 }
 
-
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
 }
@@ -362,12 +361,11 @@ a:hover {
     background: transparent;
 }
 
-
 .navbar-toggle {
     border: 0px;
     padding: 27px;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     .navbar-toggle {
         display: flex;
         flex-direction: column;
@@ -684,8 +682,7 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757;
@@ -1123,7 +1120,7 @@ h4 {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .bloc-mob-center-text {
         text-align: center;
     }
