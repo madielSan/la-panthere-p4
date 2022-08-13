@@ -16,6 +16,7 @@
 		<title>La Panthère, Agence de web design à Lyon</title>
 
 		<script async src="./js/jquery-2.1.0.js"></script>
+		<script async src="./js/jquery.touchSwipe.js"></script>
 		<script async src="./js/bootstrap.js"></script>
 		<script async src="./js/blocs.js"></script>
 		
@@ -38,18 +39,20 @@
 				<div class="navbar-container">
 					<nav class="navbar row">
 						<div class="navbar-header">
-							<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="Logo de l'Agence La Panthère, la meilleure agence de web design en plein coeur de Lyon" height="40" /></a>
-							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-							</button>
+							<a class="navbar-brand" href="index.html"><img class="logo-image" src="img/agence-la-panthere-monochrome.svg" alt="Logo de l'Agence La Panthère, la meilleure agence de web design en plein coeur de Lyon"/></a>
+							<div class="navbar-toggle-container">
+								<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+									<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+								</button>
+							</div>
 						</div>
 						<div class="collapse navbar-collapse navbar-1 special-dropdown-nav burger-navbar">
 							<ul class="site-navigation nav navbar-nav">
-								<li>
-									<a href="index.html">Accueil</a>
+								<li class="nav-list">
+									<a class="nav-link" href="index.html">Accueil</a>
 								</li>
-								<li>
-									<a href="contact.html">Contact</a>
+								<li class="nav-list">
+									<a class="nav-link" href="contact.html">Contact</a>
 								</li>
 							</ul>
 						</div>
@@ -65,7 +68,7 @@
 						<div class="row tight-width-whitespace">
 							<div class="col-sm-12">
 								<img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="Logo de l'agence web design La Panthère à Lyon situé sur la bannière graphique du site. Sur la bannière, un web designer travaille sur les idées créatives d'un projet web." />
-								<h1 class="text-center hero-bloc-text tc-white ">
+								<h1 class="text-center hero-bloc-text tc-white">
 									Agence La Panthère
 								</h1>
 								<div class="text-center">
@@ -150,7 +153,7 @@
 						<div class="row tight-width-whitespace portfolio-row">
 							<article class="col-sm-6 portfolio-article">
 								<a href="#" class="article-link" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
-									<img src="img/1.jpg" alt="web design à Lyopn. logo agence web meilleure agence et refonte site web journal" class="portfolio-thumb" />
+									<img src="img/1.jpg" alt="Image associée à la refonte d'un site web pour un journal local par l'agence web renommée La Panthère, située à Lyon." class="portfolio-thumb" />
 								</a>
 							<h3 class="mg-md text-center portfolio-subtitle">
 								Refonte d'un site web pour un journal local
@@ -160,7 +163,9 @@
 							</p>
 							</article>
 							<article class="col-sm-6">
-								<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.jpg" class="portfolio-thumb" alt="web design à Lyon. logo agence web meilleure agence, Création d'un site web pour photographes" /></a>
+								<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
+									<img src="img/2.jpg" class="portfolio-thumb" alt="Une photographe en plein travail devant son appareil photo prépare la création de son site web pour photographes avec la meilleure agence web de la région Auvergne-Rhônes-Alpes, située à Lyon."/>
+								</a>
 								<h3 class="mg-md text-center portfolio-subtitle">
 									Création d'un site web pour photographes
 								</h3>
@@ -171,7 +176,9 @@
 						</div>
 						<div class="row tight-width-whitespace portfolio-row">
 							<article class="col-sm-6">
-								<a href="#" data-lightbox="img/3.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.jpg" class="portfolio-thumb" alt="web design à Lyon. logo agence web meilleure agence, Création d'un site web pour voyageur"/></a>
+								<a href="#" data-lightbox="img/3.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
+									<img src="img/3.jpg" class="portfolio-thumb" alt="Photo d'équipements pour voyageurs. Création d'un site web pour voyageur par l'agence web design pour professionnels La Panthère, dans le 1er arrondissement de Lyon."/>
+								</a>
 								<h3 class="mg-md text-center portfolio-subtitle">
 									Création d'un site internet pour un voyageur
 								</h3>
@@ -180,7 +187,9 @@
 								</p>
 							</article>
 							<article class="col-sm-6">
-								<a href="#" data-lightbox="img/4.jpg" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.jpg" class="portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" /></a>
+								<a href="#" data-lightbox="img/4.jpg" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
+									<img src="img/4.jpg" class="portfolio-thumb" alt="Un professionnel du web design de l'agence web La Panthère, travaille sur la création d'un site web pour une agence spécialisée dans le mariage" />
+								</a>
 								<h3 class="mg-md text-center portfolio-subtitle">
 									Conception d'un site pour une agence de mariage
 								</h3>
@@ -209,7 +218,9 @@
 			<!-- main contenu principal du site - END -->
 			</main>
 			<!-- ScrollToTop Button -->
-		<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+		<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')">
+			<span class="fa fa-chevron-up"></span>
+		</a>
 			<!-- ScrollToTop Button END-->
 			<!-- Footer - bloc-8 -->
 			<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
