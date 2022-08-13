@@ -942,14 +942,6 @@ h4 {
     }
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
-    .navbar .nav {
-        max-width: 80%
-    }
-    .nav-center.navbar .nav {
-        max-width: 100%
-    }
-}
 
 
 @media (max-width: 991px) {
@@ -978,7 +970,7 @@ h4 {
     }
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767.5px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -998,7 +990,6 @@ h4 {
     .navbar .nav {
         padding-top: 0;
         margin-bottom: 0;
-        border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
     }
     .navbar.row {
