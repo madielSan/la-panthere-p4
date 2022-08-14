@@ -17,9 +17,9 @@
 
 		<script async src="./js/jquery-2.1.0.js"></script>
 		<script async src="./js/bootstrap.js"></script>
-		<script async src="./js/blocs.js"></script>
-		<script async src="./js/jquery.touchSwipe.js"></script>
+		<script defer src="./js/jquery.touchSwipe.js"></script>
 		<script async src="./js/gmaps.js"></script>
+		<script async src="./js/blocs.js"></script>
 		
 	<!-- Analytics --> <!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-F0HJNV83X7"></script>
@@ -218,7 +218,7 @@
 			<!-- main contenu principal du site - END -->
 			</main>
 			<!-- ScrollToTop Button -->
-		<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')">
+		<a class="bloc-button btn btn-d scrollToTop" id="scroll-hero" onclick="scrollToTarget('1')">
 			<span class="fa fa-chevron-up"></span>
 		</a>
 			<!-- ScrollToTop Button END-->
