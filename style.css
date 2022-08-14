@@ -98,7 +98,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -316,9 +316,14 @@ a:hover {
 }
 
 .logo-image {
+    width: 200px;
     max-height: 200px;
-    margin: 0 5px 0 20px;
+    margin: auto;
     display: inline;
+}
+
+.logo-presentation {
+    width: 100px;
 }
 
 
@@ -372,7 +377,7 @@ a:hover {
         justify-content: center;
         align-items: center;
         margin-right: 0;
-        padding: 27px 40px 15px 0;
+        padding: 29px 40px 15px 0;
     }
 }
 
@@ -497,7 +502,6 @@ nav .caret {
 button {
     outline: none!important;
 }
-
 .btn-rd {
     border-radius: 40px;
 }
@@ -511,6 +515,7 @@ button {
 
 .icon-md {
     font-size: 30px!important;
+    color: #463F1A!important;
 }
 
 .icon-lg {
@@ -685,7 +690,7 @@ label,
 .btn {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757;
+    color: #000000;
 }
 
 .container {
@@ -698,7 +703,7 @@ label,
 
 @media (max-width:768px) {
     .hero-bloc-text {
-        font-size: 28px;
+        font-size: 28px!important;
     }
 }
 
@@ -716,9 +721,7 @@ label,
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 11px;
-}
+
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -739,24 +742,63 @@ p {
     font-weight: 700;
 }
 
+
 .footer-padding {
     padding: 20px;
+}
+
+.panthere-footer {
+    font-weight: 600;
+    font-size: 13px;
+    color: #463F1A;
 }
 .social {
     display: flex;
     justify-content: space-around;
-    max-width: 400px;
+    width: 50%;
     margin: 15px auto;
-    
+}
+
+.footer-list {
+    padding-left: 30px;
+}
+.bloc-footer-title {
+    font-weight: 600;
+}
+
+.partners-list {
+    width: auto;
+    margin: 20px 0;
+}
+
+.partners-link {
+    text-decoration: underline;
+}
+
+@media (max-width:768px) {
+    .social {
+        width: 90%;
+    }
+    .footer-list {
+        padding-left: 10px;
+    }
 }
 
 .partners {
-    width: 95%;
+    width: 85%;
     margin: auto;
+    margin-top: 25px;
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
+}
+
+.partners div {
+    color: #463F1A;
+}
+.partners li a{
+    color: #463F1A;
 }
 
 
@@ -774,7 +816,6 @@ h2 {
 .title-block2 h2 {
     font-size: 21.5px;
     line-height: 1em;
-    color: gray!important;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0px 0px 1px gray;
 }
@@ -820,7 +861,7 @@ h4 {
 }
 
 .portfolio-thumb {
-    width: 270px;
+    width: 100%;
     margin-bottom: 24px;
 }
 
@@ -842,16 +883,21 @@ h4 {
     background-color: rgba(165, 147, 99, 0.7);
     padding: 40px;
 }
+
+.bold-link {
+    font-weight: 900;
+    margin-top: 20px;
+    text-decoration: underline!important;
+}
+
 @media (max-width: 768px) {
     .black-background {
         max-width: 600px;
         padding: 10px;
     }
-}
-
-.bold-link {
-    font-weight: 900;
-    text-decoration: underline!important;
+    .bold-link {
+        margin-bottom: 25px;
+    }
 }
 
 .bgc-white {
@@ -902,29 +948,29 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 
 @media (max-width:768px) {
     .bg-banniere {
-        background-image: url("img/agence-la-panthere-mobile.jpg");
+        background-image: url("img/agence-la-panthere-mobile.webp");
     }
     
     .bg-presentation {
-        background-image: url("img/image-de-presentation-mobile.jpg");
+        background-image: url("img/image-de-presentation-mobile.webp");
     }
 }
 
@@ -1116,6 +1162,12 @@ h4 {
         text-align: center;
     }
 }
+/* Bloc bannière de présentation  */
+.presentation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Bloc Citation */
 .quote-fig {
@@ -1138,6 +1190,7 @@ blockquote {
 figcaption {
     font-size: 20px;
     margin-bottom: 50px;
+    color: #333333;
 }
 
 figcaption em {
@@ -1160,7 +1213,7 @@ figcaption em {
         font-size: 17px;
         width: 90%;
     }
-    figcaption {
+    .quote-figcaption{
         font-size: 16px;
     }
     blockquote {
@@ -1168,13 +1221,13 @@ figcaption em {
     }
 
     .title-presentation {
-        font-size: 15px;
+        font-size: 17px;
         padding-left: 0!important;
         padding-right: 0!important;
         margin-bottom: 10px;
+        margin-top: 25px;
     }
     .text-presentation {
-        font-size: 10px;
         text-align: center;
     }
 
@@ -1195,7 +1248,6 @@ figcaption em {
     }
 
     .portfolio-description {
-        font-size: 10px;
         width: 65%;
         margin: auto;
     }
@@ -1204,18 +1256,10 @@ figcaption em {
         margin-bottom: 35px;
     }
 
-    .footer-list {
-        padding-left: 0;
-    }
-
-    .partners {
-        width: 100%;
-    }
-
     .bloc-footer {
         width: 150px;
         margin-right: 15px;
-       
+        margin-bottom: 15px;
     }
 
 }
