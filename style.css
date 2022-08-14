@@ -858,17 +858,23 @@ h4 {
 .white {
     color: #FFFFFF!important;
 }
-
+.portfolio-article {
+    padding: 0;
+}
+.portfolio-thumb-link {
+    width: 270px;
+    height: 270px;
+    margin: auto;
+}
 .portfolio-thumb {
-    width: 100%;
     margin-bottom: 24px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .portfolio-thumb {
         width: 60%;
     }
-}
+} */
 
 .portfolio-row {
     margin-top: 30px;
