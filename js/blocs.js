@@ -177,7 +177,7 @@ function addKeyBoardSupport() {
     })
 }
 
-jQuery(document).on(function() {
+$(document).ready(function() {
     $("#scroll-hero").on(function(t) {
     }), extraNavFuncs(), setUpSpecialNavs(), setUpDropdownSubs(), setUpLightBox(), setUpVisibilityToggle(), addSwipeSupport(), addKeyBoardSupport(), -1 != navigator.userAgent.indexOf("Safari") && -1 == navigator.userAgent.indexOf("Chrome") && $("#page-loading-blocs-notifaction").remove()
 }), $(window).load(function() {
