@@ -308,26 +308,18 @@ a:hover {
 }
 .navbar-brand {
     height: auto;
-    font-size: 25px;
-    font-weight: normal;
-    font-weight: 600;
-    line-height: 44px;
     padding: 30px;
-}
-
-.logo-image {
-    max-height: 200px;
-    margin: auto;
-    display: inline;
 }
 
 .logo-presentation {
     width: 100px;
 }
 
-
 .logo-image[src$=svg] {
-    min-width: 210px;
+    width: 210px;
+    max-height: 200px;
+    margin: auto;
+    display: inline;
 }
 
 .nav-center .logo-image {
@@ -337,7 +329,7 @@ a:hover {
 @media (max-width: 768px) {
 
     .logo-image[src$=svg] {
-        min-width: 180px;
+        width: 180px;
     }
     .navbar-brand {
         padding: 30px 0 15px 30px;
