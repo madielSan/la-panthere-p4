@@ -172,13 +172,13 @@ function addSwipeSupport() {
 }
 
 function addKeyBoardSupport() {
-    $(window).keydown(function(t) {
-        37 == t.which ? $(".prev-lightbox").is(":visible") && $(".prev-lightbox").click() : 39 == t.which && $(".next-lightbox").is(":visible") && $(".next-lightbox").click()
+    $(window).on(function(t) {
+        37 == t.which ? $(".prev-lightbox").is(":visible") && $(".prev-lightbox").on() : 39 == t.which && $(".next-lightbox").is(":visible") && $(".next-lightbox").click()
     })
 }
 
-$(document).ready(function() {
-    $("#scroll-hero").click(function(t) {
+jQuery(document).on(function() {
+    $("#scroll-hero").on(function(t) {
     }), extraNavFuncs(), setUpSpecialNavs(), setUpDropdownSubs(), setUpLightBox(), setUpVisibilityToggle(), addSwipeSupport(), addKeyBoardSupport(), -1 != navigator.userAgent.indexOf("Safari") && -1 == navigator.userAgent.indexOf("Chrome") && $("#page-loading-blocs-notifaction").remove()
 }), $(window).load(function() {
     setFillScreenBlocHeight(), animateWhenVisible(), $("#page-loading-blocs-notifaction").remove()
