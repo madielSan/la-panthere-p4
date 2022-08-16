@@ -18,7 +18,6 @@
 		<script defer src="js/bootstrap.min.js"></script>
 		<script defer src="js/blocs.min.js"></script>
 		<!-- Analytics --> <!-- Google tag (gtag.js) -->
-
 		<!-- Analytics END -->  
 	</head>
 	<body>
@@ -54,7 +53,7 @@
 			<!-- bloc-0 END -->
 			<main>
 			<!-- main contenu principal du site  -->
-				<!-- bloc-1-presentation -->
+				<!-- section-1-presentation -->
 				<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
 					<div class="container bloc-lg">
 						<div class="row tight-width-whitespace">
@@ -63,15 +62,15 @@
 								<h1 class="text-center hero-bloc-text tc-white">
 									Agence La Panthère
 								</h1>
-								<div class="text-center" aria-label="contact-button" id="contact-button">
+								<div class="text-center" id="contact-button">
 									<a href="contact.html" class="btn btn-lg btn-clean btn-rd cta-hero contact-button"  aria-labelledby="contact-button" id="cta-hero">Contact</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<!-- bloc-1-presentation END -->
-				<!-- bloc-2-services -->
+				<!-- section-1-presentation END -->
+				<!-- section-2-services -->
 				<section class="bloc bgc-white l-bloc" id="bloc-2-services">
 					<div class="container bloc-md">
 						<div class="row title-block2">
@@ -121,8 +120,8 @@
 						</figure> 
 					</div>	
 				</section>
-				<!-- bloc-2-services END -->
-				<!-- bloc-3-what-i-do -->
+				<!-- section bloc-2-services END -->
+				<!-- section bloc-3-what-i-do -->
 				<section class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
 					<div class="container bloc-lg">
 						<div class="row tight-width-whitespace black-background">
@@ -138,8 +137,8 @@
 						</div>
 					</div>
 				</section>
-				<!-- bloc-3-what-i-do END -->
-				<!-- bloc-4-portfolio -->
+				<!--  section bloc-3-what-i-do END -->
+				<!-- section bloc-4-portfolio -->
 				<section class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-portfolio">
 					<div class="container bloc-lg">
 							<h2 class="row text-center portfolio-title"> De nombreux entrepreneurs viennent nous voir avec des projets web ambitieux, voici nos réalisations à la hauteur de leurs idées.</h2>
@@ -193,8 +192,8 @@
 						</div>
 					</div>
 				</section>
-				<!-- bloc-4-portfolio END -->
-				<!-- bloc-5-cta -->
+				<!-- section bloc-4-portfolio END -->
+				<!-- sectionc bloc-5-cta -->
 				<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper b-parallax contact-us" id="bloc-5-cta">
 					<div class="container bloc-lg">
 						<div class="row">
@@ -207,7 +206,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- bloc-5-cta END -->
+				<!-- section bloc-5-cta END -->
 			<!-- main contenu principal du site - END -->
 			</main>
 			<!-- Footer - bloc-8 -->
@@ -221,22 +220,34 @@
 							<div class="row row-no-gutters social">
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social"  href="https://twitter.com/"><span class="fa fa-twitter icon-md"></span></a>
+										<a class="social"  href="https://twitter.com/">
+											<span class="fa fa-twitter icon-md" aria-hidden="true"></span>
+											<span class="visually-hidden">Logo Twitter</span>
+										</a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social"  href="https://facebook.com/"><span class="fa fa-facebook icon-md"></span></a>
+										<a class="social"  href="https://facebook.com/">
+											<span class="fa fa-facebook icon-md" aria-hidden="true"></span>
+											<span class="visually-hidden">Logo Facebook</span>
+										</a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="https://dribbble.com/"><span class="fa fa-dribbble icon-md"></span></a>
+										<a class="social" href="https://dribbble.com/">
+											<span class="fa fa-dribbble icon-md" aria-hidden="true"></span>
+											<span class="visually-hidden">Logo Dribbble</span>
+										</a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="https://www.instagram.com/" ><span class="fa fa-instagram icon-md"></span></a>
+										<a class="social" href="https://www.instagram.com/">
+											<span class="fa fa-instagram icon-md" aria-hidden="true"></span>
+											<span class="visually-hidden">Logo Instagram</span>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -276,7 +287,8 @@
 			<!-- Footer - bloc-8 END -->
 			<!-- ScrollToTop Button -->
 			<a class="bloc-button btn btn-d scrollToTop" aria-label="scroll-to-top" href="#header" id="scroll-hero" onclick="scrollToTarget('1')">
-				<span class="fa fa-chevron-up"></span>
+				<span class="fa fa-chevron-up" aria-hidden="true"></span>
+				<span class="visually-hidden">Remonter en haut de la page.</span>
 			</a>
 			<!-- ScrollToTop Button END-->
 		</div>
